@@ -1,0 +1,127 @@
+<html>
+<head>
+    <title>Lentes Lux Project</title>
+    <style>
+        .navbar { 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: hsl(0, 0%, 100%);
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .navbar a, .navbar button {
+            color: white;
+            padding: 2px 10px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        } 
+        body {
+            font-family: Bahnschrift SemiBold;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(to bottom left, #ffffff, #feb4ff);
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .project-info {
+            background-color: rgb(26, 26, 26);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(117, 117, 117, 0.3);
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 1.5;
+        }
+        h1 {
+            color: #0084ff;
+        }
+        nav {
+            text-align: center;
+        }
+        nav img {
+            width: 200px;
+            margin: 10px;
+            border-radius: 20px;
+            transition: transform 0.3s, filter 0.3s;
+            border: 2px solid whitesmoke;
+            transition: transform 0.3s;
+            filter: blur(1px);
+        }
+        nav img:hover {
+            transform: scale(2.0);
+            filter: blur(0px);
+        }
+        nav img:hover::after {
+            opacity: 1;
+        }
+        .animal-img {
+            display: inline-block;
+            margin: 20px;
+            cursor: pointer;
+            transition: transform 0.5s ease;
+            position: relative;
+        }
+        .animal-img:hover {
+            transform: scale(1.05);
+        }
+        .animal-img img {
+            transition: filter 0.3s ease, transform 0.3s ease;
+        }
+        .animal-img .overlay-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }        
+        .animal-img:hover .main-img {
+            transform: scale(1.1);
+        }
+        .animal-img:hover .overlay-img {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">            
+            <a href="D:\PAEC PROYECTO\PAEC CECYTEA.html"><img src="D:\PAEC PROYECTO\paec logo.png" width="80" height="50" align="left"></a>
+        </div>
+    </header>
+    
+    <div class="project-info">
+        <h1>Proyecto Lentes (Lenteslux)</h1>
+        <p>Un proyecto para la sociedad que necesite de unas gafas para su discapacidad visual y asi darle un mejor rendimiento academico y mejora visual para el entenidimiento </p>
+        <h1>Objetivo</h1>
+        <p>Dotar a los estudiantes de lentes con el fin de que mejoren su rendimiento academico</p>
+        <br>
+        <p>Este proyecto fue creado como una pagina para los estudiantes ya que se realizaron examenes de la vista a los estudiantes con el fin de mejorar en estudios, mejorar su vision o dar una opurtunidad de resolver un problema tan comun y normal como la miopia, astigmatismo(...)</p>
+    </div>
+
+    <nav>
+        <div class="animal-img">
+            <a href="lenteslux.html">
+                <img src="D:\PAEC PROYECTO\lentesillospro.jpg" class="main-img" data-static="lentesillospro.jpg">
+                <img src="LLUX.png" class="overlay-img">
+            </a>
+        </div>
+    </nav>
+</body>
+</html>
